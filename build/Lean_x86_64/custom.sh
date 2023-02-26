@@ -288,7 +288,7 @@ EOF
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-adbyby-plus=n #adbyby去广告
 CONFIG_PACKAGE_luci-app-webadmin=n #Web管理页面设置
-CONFIG_PACKAGE_luci-app-ddns=n #DDNS服务
+CONFIG_PACKAGE_luci-app-ddns=y #DDNS服务
 CONFIG_DEFAULT_luci-app-vlmcsd=y #KMS激活服务器
 CONFIG_PACKAGE_luci-app-filetransfer=y #系统-文件传输
 CONFIG_PACKAGE_luci-app-autoreboot=n #定时重启
@@ -302,13 +302,8 @@ CONFIG_PACKAGE_luci-app-nlbwmon=y #宽带流量监控
 CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
 CONFIG_PACKAGE_luci-app-haproxy-tcp=n #Haproxy负载均衡
 CONFIG_PACKAGE_luci-app-diskman=n #磁盘管理磁盘信息
-CONFIG_PACKAGE_luci-app-transmission=n #Transmission离线下载
-CONFIG_PACKAGE_luci-app-qbittorrent=n #qBittorrent离线下载
-CONFIG_PACKAGE_luci-app-amule=n #电驴离线下载
-CONFIG_PACKAGE_luci-app-xlnetacc=n #迅雷快鸟
 CONFIG_PACKAGE_luci-app-zerotier=n #zerotier内网穿透
 CONFIG_PACKAGE_luci-app-hd-idle=n #磁盘休眠
-CONFIG_PACKAGE_luci-app-unblockmusic=n #解锁网易云灰色歌曲
 CONFIG_PACKAGE_luci-app-airplay2=n #Apple AirPlay2音频接收服务器
 CONFIG_PACKAGE_luci-app-music-remote-center=n #PCHiFi数字转盘遥控
 CONFIG_PACKAGE_luci-app-usb-printer=n #USB打印机
@@ -318,13 +313,20 @@ CONFIG_PACKAGE_luci-app-uugamebooster=n #UU游戏加速器
 CONFIG_PACKAGE_luci-app-dockerman=n #Docker管理
 CONFIG_PACKAGE_luci-app-ttyd=n #ttyd
 CONFIG_PACKAGE_luci-app-wireguard=n #wireguard端
+CONFIG_PACKAGE_luci-app-mwan3=y
+CONFIG_PACKAGE_luci-app-mwan3helper=y
+CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=y
+CONFIG_PACKAGE_luci-app-syncdial=y
+CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_luci-app-smartdns=y
 #
 # VPN相关插件(禁用):
 #
 CONFIG_PACKAGE_luci-app-v2ray-server=y #V2ray服务器
 CONFIG_PACKAGE_luci-app-pptp-server=n #PPTP VPN 服务器
-CONFIG_PACKAGE_luci-app-ipsec-vpnd=n #ipsec VPN服务
-CONFIG_PACKAGE_luci-app-openvpn-server=n #openvpn服务
+CONFIG_PACKAGE_luci-app-ipsec-vpnd=y #ipsec VPN服务
+CONFIG_PACKAGE_luci-app-openvpn-server=y #openvpn服务
 CONFIG_PACKAGE_luci-app-softethervpn=n #SoftEtherVPN服务器
 #
 # 文件共享相关(禁用):
