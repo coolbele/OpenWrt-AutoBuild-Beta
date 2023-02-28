@@ -11,7 +11,7 @@ cat feeds.conf.default
 # 添加第三方软件包
 git clone https://github.com/db-one/dbone-packages.git -b 18.06 package/dbone-packages
 git clone https://github.com/gngpp/luci-theme-design package/luci-theme-design
-git clone https://github.com/kenzok8/openwrt-packages
+git clone https://github.com/kiddin9/openwrt-packages
 
 # 更新并安装源
 ./scripts/feeds clean
