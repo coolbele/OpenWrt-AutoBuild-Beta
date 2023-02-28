@@ -336,12 +336,6 @@ CONFIG_PACKAGE_luci-app-openvpn=y
 CONFIG_PACKAGE_luci-app-openvpn-server=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
-CONFIG_DEFAULT_luci-app-dockerman=y
-CONFIG_PACKAGE_luci-app-dockerman_INCLUDE_docker_ce=y
-CONFIG_PACKAGE_luci-app-dockerman_INCLUDE_ttyd=y
-CONFIG_PACKAGE_luci-lib-docker=y
-CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_docker-ce=y
 CONFIG_DEFAULT_fdisk=y
 #
 # VPN相关插件(禁用):
